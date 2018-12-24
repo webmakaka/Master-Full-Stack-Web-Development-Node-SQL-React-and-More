@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run prettier & npm run lint & npm run start:dev",
+    "prettier": "prettier --write ./**/*.{js,jsx,css,json}",
+    "lint": "eslint --fix \"./**/*.{js,jsx}\"",
+    "start:dev": "nodemon --exec babel-node index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.11.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.17.5",
+    "prettier": "^1.15.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
