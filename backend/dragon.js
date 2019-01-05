@@ -1,7 +1,36 @@
+import TRAITS from 'traits.json';
+
+const DEFAULT_PROPERTIES = {
+  nickname: 'unnamned',
+  get birthdate () {
+    return new Date();
+  },
+  get randomTraits () {
+    const traits = [];
+
+    TRAITS.forEach((TRAIT) => {
+
+      const traitType = TRAIT.type;
+      const traitValues = TRAIT.values;
+
+      const traitValue =
+        traitValues[Math.floor(Math.random() * traitValues.length)];
+
+      traits.push({
+        traitType,
+        traitValue
+      });  
+    });
+
+    return traits;
+  }
+};
+
 class Dragon {
-  constructor (birhtdate, nickname) {
-    this.birhtdate = birhtdate;
-    this.nickname = nickname;
+  constructor ({ birhtdate, nickname, traits } = {}) {
+    this.birhtdate = birhtdate || DEFAULT_PROPERTIES.birthdate;
+    this.nickname = nickname || DEFAULT_PROPERTIES.nickname;
+    this.traits = traits || DEFAULT_PROPERTIES.randomTraits;
   }
 }
 
