@@ -8,7 +8,8 @@
     "prettier": "prettier --write ./**/*.{js,jsx,css,json}",
     "lint": "eslint --fix \"./**/*.{js,jsx}\"",
     "start:dev": "nodemon --exec babel-node ./bin/server.js",
-    "start:prod": "babel-node ./bin/server.js"
+    "start:prod": "babel-node ./bin/server.js",
+    "configure": "./bin/configure_db.sh"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -29,6 +30,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "pg": "^7.7.1"
   }
 }

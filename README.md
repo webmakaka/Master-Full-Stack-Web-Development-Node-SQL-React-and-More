@@ -44,6 +44,36 @@
 http://localhost:3000/generation/
 http://localhost:3000/dragon/new/
 
+<br/>
+
+## Feature 1. Create Dragons: PostgreSQL and the Database
+
+<br/>
+
+### Lesson 24. Get Generation
+
+I use free heroku postgres cloud.
+
+    CREATE USER node_user WITH SUPERUSER PASSWORD 'node_password';
+
+<br/>
+
+    $ chmod +x bin/configure_db.sh
+
+<br/>
+
+### Lesson 32. Configure the Database Pool
+
+    # npm install --save pg
+
+<br/>
+
+### Lesson 34. Generation Table and Storing Generations
+
+<br/>
+
+![Application](/img/pic-34-01.png?raw=true)
+
 ---
 
 **Marley**

@@ -1,4 +1,5 @@
 import Generation from 'app/generation';
+import GenerationTable from 'app/generation/table';
 
 class GenerationEngine {
   constructor () {
@@ -16,6 +17,8 @@ class GenerationEngine {
 
   buildNewGeneration () {
     this.generation = new Generation();
+
+    GenerationTable.storeGeneration(this.generation);
 
     console.log('new generation', this.generation);
 
