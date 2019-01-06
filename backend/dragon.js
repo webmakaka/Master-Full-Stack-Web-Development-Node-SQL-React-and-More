@@ -9,7 +9,6 @@ const DEFAULT_PROPERTIES = {
     const traits = [];
 
     TRAITS.forEach((TRAIT) => {
-
       const traitType = TRAIT.type;
       const traitValues = TRAIT.values;
 
@@ -19,7 +18,7 @@ const DEFAULT_PROPERTIES = {
       traits.push({
         traitType,
         traitValue
-      });  
+      });
     });
 
     return traits;

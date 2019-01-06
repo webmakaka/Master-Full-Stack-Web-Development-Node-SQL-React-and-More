@@ -1,28 +1,14 @@
-import Dragon from 'dragon';
+import Generation from 'generation';
 
-const fooey = new Dragon({
-  birthdate: new Date(),
-  nickname: 'fooey'
-});
+const generation = new Generation();
 
-const baloo = new Dragon({
-  birthdate: new Date(),
-  nickname: 'baloo',
-  traits: [
-    {
-      traitType: 'backgroundColor',
-      traitValue: 'green'
-    }
-  ]
-});
+console.log('generation', generation);
 
-const mimar = new Dragon();
+const gooby = generation.newDragon();
+
+console.log('gooby', gooby);
 
 setTimeout(() => {
-  const gooby = new Dragon();
-  console.log('gooby', gooby);
-}, 3000);
-
-console.log('fooey', fooey);
-console.log('baloo', baloo);
-console.log('mimar', mimar);
+  const mimar = generation.newDragon();
+  console.log('mimar', mimar);
+}, 1500);

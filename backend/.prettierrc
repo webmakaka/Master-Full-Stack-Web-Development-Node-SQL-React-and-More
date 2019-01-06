@@ -1,1 +1,3 @@
-{ "arrowParens": "always" }
+{ "singleQuote": true,
+  "arrowParens": "always" 
+}
