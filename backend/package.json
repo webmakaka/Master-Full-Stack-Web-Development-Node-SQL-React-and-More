@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:withoutLint": "npm run prettier & npm run start:dev",
     "start": "npm run prettier & npm run lint & npm run start:dev",
     "prettier": "prettier --write ./**/*.{js,jsx,css,json}",
     "lint": "eslint --fix \"./**/*.{js,jsx}\"",

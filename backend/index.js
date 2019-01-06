@@ -1,14 +1,9 @@
-import Generation from 'generation';
+import GenerationEngine from 'engine';
 
-const generation = new Generation();
+const engine = new GenerationEngine();
 
-console.log('generation', generation);
-
-const gooby = generation.newDragon();
-
-console.log('gooby', gooby);
+engine.start();
 
 setTimeout(() => {
-  const mimar = generation.newDragon();
-  console.log('mimar', mimar);
-}, 1500);
+  engine.stop()
+}, 20000);
