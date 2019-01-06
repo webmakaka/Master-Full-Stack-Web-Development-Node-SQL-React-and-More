@@ -1,26 +1,26 @@
 import Generation from 'generation';
 
 class GenerationEngine {
-  constructor() {
+  constructor () {
     this.generation = null;
     this.timer = null;
   }
 
-  start() {
+  start () {
     this.buildNewGeneration();
   }
 
-  stop() {
+  stop () {
     clearTimeout(this.timer);
   }
 
-  buildNewGeneration() {
+  buildNewGeneration () {
     this.generation = new Generation();
 
     console.log('new generation', this.generation);
 
     this.timer = setTimeout(
-      () => this.buildNewGeneration(), 
+      () => this.buildNewGeneration(),
       this.generation.expiration.getTime() - Date.now()
     );
   }
