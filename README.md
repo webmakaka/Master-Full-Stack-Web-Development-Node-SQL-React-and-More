@@ -37,6 +37,13 @@
 
 ### Lesson 23. Codebase Organization Part 2
 
+<br/>
+
+### Lesson 24. Get Generation
+
+http://localhost:3000/generation/
+http://localhost:3000/dragon/new/
+
 ---
 
 **Marley**
