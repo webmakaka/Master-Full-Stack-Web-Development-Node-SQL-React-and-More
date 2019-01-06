@@ -1,9 +1,8 @@
 import express from 'express';
-import GenerationEngine from 'engine';
+import GenerationEngine from 'app/generation/engine';
 
 const app = express();
 const engine = new GenerationEngine();
-const port = 3000;
 
 engine.start();
 
@@ -13,4 +12,4 @@ app.get('/', (req, res) => {
   });
 });
 
-app.listen(port, () => console.log(`listening on port ${port}`));
+module.exports = app;

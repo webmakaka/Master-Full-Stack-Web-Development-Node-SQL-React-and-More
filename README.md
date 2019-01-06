@@ -33,6 +33,10 @@
 
 ![Application](/img/pic-21-01.png?raw=true)
 
+<br/>
+
+### Lesson 23. Codebase Organization Part 2
+
 ---
 
 **Marley**

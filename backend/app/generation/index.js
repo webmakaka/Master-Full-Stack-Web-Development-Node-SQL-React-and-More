@@ -1,5 +1,5 @@
-import Dragon from 'dragon';
-import { REFRESH_RATE, SECONDS } from 'config';
+import Dragon from 'app/dragon';
+import { REFRESH_RATE, SECONDS } from 'app/config';
 
 const refreshRate = REFRESH_RATE * SECONDS;
 

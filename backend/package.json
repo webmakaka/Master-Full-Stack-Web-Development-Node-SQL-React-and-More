@@ -7,7 +7,8 @@
     "start": "npm run prettier & npm run lint & npm run start:dev",
     "prettier": "prettier --write ./**/*.{js,jsx,css,json}",
     "lint": "eslint --fix \"./**/*.{js,jsx}\"",
-    "start:dev": "nodemon --exec babel-node index.js"
+    "start:dev": "nodemon --exec babel-node ./bin/server.js",
+    "start:prod": "babel-node ./bin/server.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

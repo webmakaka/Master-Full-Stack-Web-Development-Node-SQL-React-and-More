@@ -1,4 +1,4 @@
-import Generation from 'generation';
+import Generation from 'app/generation';
 
 class GenerationEngine {
   constructor () {
