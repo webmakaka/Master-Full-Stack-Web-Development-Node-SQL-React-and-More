@@ -115,6 +115,26 @@ http://pgweb-demo.herokuapp.com
 
 ### Lesson 45. Verify Dragon Trait Storage
 
+<br/>
+
+### Lesson 47. Get Dragon With Traits Part 2
+
+    $ npm install --save babel-preset-stage-2
+
+<br/>
+
+    # node_modules/.bin/babel-node app/dragon/helper.js
+    dragon Dragon {
+    dragonId: 10,
+    birthdate: 2019-01-07T07:40:52.736Z,
+    nickname: 'unnamned',
+    traits:
+    [ { traitType: 'backgroundColor', traitValue: 'green' },
+        { traitType: 'size', traitValue: 'medium' },
+        { traitType: 'pattern', traitValue: 'spotted' },
+        { traitType: 'build', traitValue: 'slender' } ],
+    generationId: 2236 }
+
 ---
 
 **Marley**

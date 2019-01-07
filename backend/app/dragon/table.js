@@ -14,17 +14,43 @@ class DragonTable {
 
           const dragonId = response.rows[0].id;
 
-          Promise.all(dragon.traits.map(({ traitType, traitValue }) => {
-            return DragonTraitTable.storeDragonTrait({
-              dragonId, traitType, traitValue
+          Promise.all(
+            dragon.traits.map(({ traitType, traitValue }) => {
+              return DragonTraitTable.storeDragonTrait({
+                dragonId,
+                traitType,
+                traitValue
+              });
             })
-          }))
+          )
             .then(() => resolve({ dragonId }))
-            .catch(error => reject(error));
+            .catch((error) => reject(error));
+        }
+      );
+    });
+  }
+
+  static getDragon ({ dragonId }) {
+    return new Promise((resolve, reject) => {
+      pool.query(
+        `SELECT birthdate, nickname, "generationId" 
+           FROM dragon 
+           WHERE dragon.id = $1`,
+        [dragonId],
+        (error, response) => {
+          if (error) return reject(error);
+
+          if (response.rows.length === 0) return reject(new Error('no dragon'));
+
+          resolve(response.rows[0]);
         }
       );
     });
   }
 }
+
+// DragonTable.getDragon({ dragonId: 3 })
+//   .then((dragon) => console.log(dragon))
+//   .catch((error) => console.log('error', error));
 
 module.exports = DragonTable;

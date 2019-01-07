@@ -30,6 +30,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-stage-2": "^6.24.1",
     "express": "^4.16.4",
     "pg": "^7.7.1"
   }
