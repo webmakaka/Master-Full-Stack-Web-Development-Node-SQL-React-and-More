@@ -4,7 +4,11 @@
 
 ## Feature 1. Create Dragons: Node.js
 
-    $ docker build -t marley/master-full-stack-web-development -f Dockerfile.dev .
+    # $ docker build -t marley/master-full-stack-web-development -f Dockerfile.dev .
+    $ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app marley/master-full-stack-web-development
+
+run with container name
+
     $ docker run --name master-full-stack-web-development -p 3000:3000 -v /app/node_modules -v $(pwd):/app marley/master-full-stack-web-development
 
 <br/>
@@ -73,6 +77,10 @@ I use free heroku postgres cloud.
 <br/>
 
 ![Application](/img/pic-34-01.png?raw=true)
+
+<br/>
+
+### Lesson 35. Get Generation with IDs
 
 ---
 
