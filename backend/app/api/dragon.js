@@ -3,7 +3,7 @@ import DragonTable from 'app/dragon/table';
 
 const router = new Router();
 
-router.get('/new', (req, res) => {
+router.get('/new', (req, res, next) => {
   const dragon = req.app.locals.engine.generation.newDragon();
 
   DragonTable.storeDragon(dragon)
@@ -14,7 +14,7 @@ router.get('/new', (req, res) => {
 
       res.json({ dragon });
     })
-    .catch((error) => console.error(error));
+    .catch((error) => next(error));
 });
 
 module.exports = router;

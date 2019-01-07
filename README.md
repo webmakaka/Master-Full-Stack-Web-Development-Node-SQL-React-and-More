@@ -86,6 +86,10 @@ I use free heroku postgres cloud.
 
 ### Lesson 38. Store Dragons
 
+<br/>
+
+### Lesson 39. Error Handling in Express.js
+
 ---
 
 **Marley**
