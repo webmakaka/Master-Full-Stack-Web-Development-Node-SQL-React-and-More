@@ -3,7 +3,7 @@ FROM node:alpine
 RUN apk update && apk upgrade && \
     apk add --no-cache bash git 
 
-WORKDIR '/app'
+WORKDIR '/project'
 
 COPY ./package*.json ./
 RUN npm install

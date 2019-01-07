@@ -90,6 +90,14 @@ I use free heroku postgres cloud.
 
 ### Lesson 39. Error Handling in Express.js
 
+<br/>
+
+### Lesson 41. Trait Table
+
+<br/>
+
+![Application](/img/pic-41-01.png?raw=true)
+
 ---
 
 **Marley**
