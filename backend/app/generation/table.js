@@ -1,5 +1,4 @@
 import pool from 'databasePool';
-
 class GenerationTable {
   static storeGeneration (generation) {
     return new Promise((resolve, reject) => {
