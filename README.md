@@ -94,9 +94,18 @@ I use free heroku postgres cloud.
 
 ### Lesson 41. Trait Table
 
+    # node_modules/.bin/babel-node bin/insertTraits.js
+
 <br/>
 
 ![Application](/img/pic-41-01.png?raw=true)
+
+<br/>
+
+### Lesson 42. Trait Table and Get Trait ID
+
+    # node_modules/.bin/babel-node app/trait/table.js
+    traitId 7
 
 ---
 
