@@ -5,7 +5,7 @@
 ## Feature 1. Create Dragons: Node.js
 
     # $ docker build -t marley/master-full-stack-web-development -f Dockerfile.dev .
-    $ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app marley/master-full-stack-web-development
+    $ docker run -p 3000:3000 -v /project/node_modules -v $(pwd):/project marley/master-full-stack-web-development
 
 run with container name
 
@@ -134,6 +134,17 @@ http://pgweb-demo.herokuapp.com
         { traitType: 'pattern', traitValue: 'spotted' },
         { traitType: 'build', traitValue: 'slender' } ],
     generationId: 2236 }
+
+<br/>
+
+## Feature 1. Create Dragons: React.js and Redux
+
+<br/>
+
+### Lesson 50. Set Up the React Frontend Part 1
+
+    $ cd ../frontend/
+    $ npx create-react-app .
 
 ---
 
