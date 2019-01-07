@@ -58,6 +58,10 @@ http://localhost:3000/dragon/new/
 
 I use free heroku postgres cloud.
 
+And web console:  
+http://pgweb-demo.herokuapp.com
+
+    -- user for local database (if needed)
     CREATE USER node_user WITH SUPERUSER PASSWORD 'node_password';
 
 <br/>
@@ -106,6 +110,10 @@ I use free heroku postgres cloud.
 
     # node_modules/.bin/babel-node app/trait/table.js
     traitId 7
+
+<br/>
+
+### Lesson 45. Verify Dragon Trait Storage
 
 ---
 
