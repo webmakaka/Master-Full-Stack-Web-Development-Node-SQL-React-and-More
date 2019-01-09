@@ -146,6 +146,16 @@ http://pgweb-demo.herokuapp.com
     $ cd ../frontend/
     $ npx create-react-app .
 
+<br/>
+
+### Lesson 52. Generation Component
+
+    $ npm run start
+
+<br/>
+
+![Application](/img/pic-52-01.png?raw=true)
+
 ---
 
 **Marley**
