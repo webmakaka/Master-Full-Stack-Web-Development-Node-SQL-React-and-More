@@ -14,7 +14,7 @@ const getDragonWithTraits = ({ dragonId }) => {
         [dragonId],
         (error, response) => {
           if (error) return reject(error);
-          
+
           resolve(response.rows);
         }
       );

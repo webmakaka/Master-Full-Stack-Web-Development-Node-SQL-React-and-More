@@ -4,7 +4,7 @@
 
 ## Feature 1. Create Dragons: Node.js
 
-    # $ docker build -t marley/master-full-stack-web-development -f Dockerfile.dev .
+    $ docker build -t marley/master-full-stack-web-development -f Dockerfile.dev .
     $ docker run -p 3000:3000 -v /project/node_modules -v $(pwd):/project marley/master-full-stack-web-development
 
 run with container name
@@ -159,6 +159,21 @@ http://pgweb-demo.herokuapp.com
 <br/>
 
 ### Lesson 53. React State and Generation Fetch Part 1
+
+<br/>
+
+### Lesson 54. Backend Interlude Cross-Origin Resource Sharing
+
+    $ cd ../backend/
+    $ npm install --save cors
+
+<br/>
+
+### Lesson 58. New Dragon in React
+
+<br/>
+
+![Application](/img/pic-58-01.png?raw=true)
 
 ---
 

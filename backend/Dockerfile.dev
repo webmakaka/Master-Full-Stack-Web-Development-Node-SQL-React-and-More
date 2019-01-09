@@ -5,6 +5,8 @@ RUN apk update && apk upgrade && \
 
 WORKDIR '/project'
 
+RUN npm install -g npm
+
 COPY ./package*.json ./
 RUN npm install
 
