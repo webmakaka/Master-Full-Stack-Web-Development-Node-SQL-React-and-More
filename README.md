@@ -1,5 +1,8 @@
 # [David Joseph Katz] Master Full-Stack Web Development | Node, SQL, React, &amp; More [ENG, 2018]
 
+**Original src:**  
+https://github.com/15Dkatz/dragonstack-guides
+
 <br/>
 
 ## Feature 1. Create Dragons: Node.js
@@ -174,6 +177,25 @@ http://pgweb-demo.herokuapp.com
 <br/>
 
 ![Application](/img/pic-58-01.png?raw=true)
+
+<br/>
+
+### Lesson 59. Dragon Avatar Component and React PropsLesson
+
+<br/>
+
+### Lesson 60. New Dragon Button and React Bootstrap
+
+    $ cd ../frontend/
+    $ npm install --save react-bootstrap
+
+<br/>
+
+### Lesson 63. Optional Dragon Avatar Image Part 2
+
+<br/>
+
+![Application](/img/pic-63-01.png?raw=true)
 
 ---
 
