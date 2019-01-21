@@ -197,6 +197,20 @@ http://pgweb-demo.herokuapp.com
 
 ![Application](/img/pic-63-01.png?raw=true)
 
+<br/>
+
+### Lesson 65. Redux in Dragonstack and the Generation Reducer
+
+    $ npm install --save redux
+
+<br/>
+
+### Lesson 68. Redux Organization and Tools
+
+<br/>
+
+![Application](/img/pic-68-01.png?raw=true)
+
 ---
 
 **Marley**
